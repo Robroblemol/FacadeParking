@@ -4,7 +4,7 @@ class Tiquete{
   private String tipoVehiculo = "";
   private boolean pago = false;
 
-
+  Tiquete (){};
   Tiquete(int idTiquete,String fecha,String tipoVehiculo){
     this.fecha=fecha;
     this.idTiquete=idTiquete;
@@ -16,10 +16,10 @@ class Tiquete{
   int getIdTiquete(){
     return idTiquete;
   }
-  void setFecha( ) {
+  void setFecha(String fecha ) {
     this.fecha=fecha;
   }
-  void setIdTiquete(){
+  void setIdTiquete(int id){
     this.idTiquete=idTiquete;
   }
   String getTipoVehiculo(){

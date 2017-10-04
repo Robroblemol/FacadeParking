@@ -1,7 +1,8 @@
 import g4p_controls.*;//importamos libreria
 
 GWindow window;//ventanas
-GButton bStart;//boton
+GButton bStart;
+GButton bAltura;//boton
 GLabel lbTipeVehicule;//objeto tipo label
 GToggleGroup togG1Options;
 GOption grp1_a, grp1_b, grp1_c;
@@ -18,6 +19,8 @@ void createControlGruop( ) {
 
   bStart = new GButton(this,80,130,100,35,"Emitir Tiquete");
   bStart.fireAllEvents(true);//Habilitamos toda las clases dissparos
+  bAltura = new GButton(this, 80,165,100, 35,"Emitir Tiquete con altura");
+  bAltura.fireAllEvents(true);//Habilitamos toda las clases dissparos
    lbTipeVehicule = new GLabel(this, 43, 24, 159, 25);
    lbTipeVehicule.setText("Control Acceso Parking");
 
