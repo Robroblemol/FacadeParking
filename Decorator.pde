@@ -1,8 +1,8 @@
-abstract class AlturaDecorator extends Tiquete{
+abstract class Decorator extends Tiquete{
   //EmitirTiqueteCar eTC;
   Tiquete t;
   //public float altura =0;
-  AlturaDecorator(Tiquete t){
+    Decorator(Tiquete t){
 //    eTC = EmitirTiqueteCar(date);
   //  t=eTC.getTiquete();
   this.t=t;
